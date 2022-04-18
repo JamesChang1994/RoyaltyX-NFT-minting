@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+/* Global Styles */
+:root {
+  --primary-color: #17a2b8;
+  --dark-color: #343a40;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.n-container {
+  padding: 0px 350px 0px 350px;
+}
+
+
+.header {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+
+  .logo {
+    height: 80px;
+    cursor: pointer;
+  }
+
+  .connect_wallet {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 7px 30px 7px 30px;
+    color: #FFFFFF;
+
+
+    background: linear-gradient(85.58deg, rgba(255, 255, 255, 0.5) -59.62%, rgba(194, 194, 194, 0.5) -26.55%, rgba(70, 70, 70, 0.5) 3.55%, rgba(255, 255, 255, 0.5) 42.65%, rgba(138, 138, 138, 0.5) 75.26%, rgba(255, 255, 255, 0.5) 102.64%);
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    box-sizing: border-box;
+
+    cursor: pointer;
+  }
+}
+
+.landing {
+  background-image: url('./img/pot_bg.png');
+  background-size: 100% 100%;
+  height: 100vh;
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  .imagine_text {
+    position: relative;
+
+    .imagine_text_real {
+      position: absolute;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 68px;
+      line-height: 102px;
+      /* identical to box height */
+      display: flex;
+      align-items: center;
+  
+      color: #FFFFFF;
+    }
+
+    .imagine_text_blue {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 68px;
+      line-height: 102px;
+      /* identical to box height */
+      display: flex;
+      align-items: center;
+      color: #FFFFFF;
+  
+      filter: blur(13px);
+    }
+  }
+}
+
+.comment {
+  background-color: #0D0D0F;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .mint_btn {
+
+    background: linear-gradient(85.58deg, rgba(255, 255, 255, 0.5) -59.62%, rgba(194, 194, 194, 0.5) -26.55%, rgba(70, 70, 70, 0.5) 3.55%, rgba(255, 255, 255, 0.5) 42.65%, rgba(138, 138, 138, 0.5) 75.26%, rgba(255, 255, 255, 0.5) 102.64%);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+
+    padding: 7px 10px 7px 10px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+
+    color: #FFFFFF;
+    max-width: 400px;
+    width: 80%;
+    cursor: pointer;
+  }
+
+  .join_btn {
+    border: 1px solid linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66));
+    border-radius: 6px;
+    padding: 7px 10px 7px 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    color: #FFFFFF;
+    max-width: 400px;
+    width: 80%;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .beyond_text {
+
+    h1 {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 55px;
+  
+      color: #FFFFFF;
+      text-align: left;
+    }
+
+    p {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 37px;
+
+      color: #FFFFFF;
+      text-align: left;
+    }
+
+  }
+
+  .timeline_title {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    /* identical to box height */
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  .timeline_content {
+    align-items: center !important;
+
+    
+    .timeline_text {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 37px;
+
+      color: #FFFFFF;
+      text-align: left;
+    }
+
+    .whitepaper_img {
+      max-width: 280px;
+      margin: auto;
+    }
+  }
+
+}
+
+.outLink {
+  background-image: url('./img/lin_bg.png');
+  background-size: 100% 100%;
+  padding-top: 170px;
+  padding-bottom: 170px;
+
+  .outLink_btn {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 63px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    background: linear-gradient(85.58deg, rgba(255, 255, 255, 0.5) -59.62%, rgba(194, 194, 194, 0.5) -26.55%, rgba(70, 70, 70, 0.5) 3.55%, rgba(255, 255, 255, 0.5) 42.65%, rgba(138, 138, 138, 0.5) 75.26%, rgba(255, 255, 255, 0.5) 102.64%);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+
+    padding-left: 70px;
+    padding-right: 70px;
+
+    cursor: pointer;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 130px;
+  padding: 20px 0px 20px 0px;
+}
+
+@media only screen and (max-width: 850px) { 
+
+  .n-container {
+    padding: 0px 30px 0px 30px;
+  }
+
+
+  .header {
+    
+    .logo {
+      height: 70px;
+    }
+
+    .connect_wallet {
+  
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height */
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 5px 15px 5px 15px;
+      color: #FFFFFF;
+  
+  
+      background: linear-gradient(85.58deg, rgba(255, 255, 255, 0.5) -59.62%, rgba(194, 194, 194, 0.5) -26.55%, rgba(70, 70, 70, 0.5) 3.55%, rgba(255, 255, 255, 0.5) 42.65%, rgba(138, 138, 138, 0.5) 75.26%, rgba(255, 255, 255, 0.5) 102.64%);
+      border: 1px solid #FFFFFF;
+      border-radius: 6px;
+      box-sizing: border-box;
+  
+      cursor: pointer;
+    }
+  }
+
+
+  .landing {
+    background-size: 100% 100%;
+    background-image: url('./img/port_bg_m.png');
+    justify-content: center;
+      
+    .imagine_text {
+      .imagine_text_real {
+        font-size: 40px;
+        color: black;
+      }
+  
+      .imagine_text_blue {
+        font-size: 40px;
+        color: black;
+        filter: blur(30px);
+      }
+    }
+  }
+  
+
+  .comment {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  
+    .mint_btn {
+      font-size: 25px;
+    }
+  
+    .join_btn {
+      font-size: 25px;
+    }
+  
+    .beyond_text {
+  
+      h1 {
+        font-size: 30px;
+        line-height: 45px;
+        margin-top: 30px;
+      }
+  
+      p {
+        font-size: 18px;
+        line-height: 30px;
+      }
+  
+    }
+  
+    .timeline_title {
+      font-size: 30px;
+      line-height: 45px;
+    }
+  
+    .timeline_content {
+      
+      .timeline_text {
+        font-size: 18px;
+        line-height: 30px;
+      }
+  
+      .whitepaper_img {
+        max-width: 280px;
+        margin: auto;
+        text-align: center;
+        margin-top: 30px;
+      }
+    }
+  
+  }
+
+  
+.outLink {
+  background-size: auto 100%;
+  background-position: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  .outLink_btn {
+
+    font-size: 20px;
+    line-height: 40px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+}
+
+
